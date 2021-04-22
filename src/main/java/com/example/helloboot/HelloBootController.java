@@ -15,5 +15,10 @@ public class HelloBootController {
         String resp = String.format("%s from %s", prefix, System.getenv().getOrDefault("HOSTNAME", "localhost"));
         return resp;
     }
+    
+    @GetMapping("/carlos")
+	public String carlos() {
+		return "carlos";
+	}
 
 }
